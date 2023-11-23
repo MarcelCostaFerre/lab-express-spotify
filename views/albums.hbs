@@ -1,0 +1,19 @@
+<div>
+    {{!-- <h2>Albums for:{{artistName}}</h2> --}}
+    {{#each albumArr}}
+        <h3>{{this.albumName}}</h3>
+        <img src={{this.albumImg}} alt="album img">
+        <a href="/albums/tracks/{{this.albumId}}">Songs</a>
+        <hr>
+    {{/each}}
+</div>
+
+{{!-- <div>
+    <h2>Albums for:{{artistName}}</h2>
+    {{#each items}}
+        <h3>{{albumName}}</h3>
+        <img src={{albumImg}} alt="album img">
+        <a href="/albums/tracks/{{albumId}}">songs</a>
+    {{/each}}
+</div> --}}
+
